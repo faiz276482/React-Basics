@@ -1,10 +1,14 @@
 import React from 'react';
-const Ninjas = () => {
+const Ninjas = (Props) => {
+
+    const {name,age,belt}=Props;
+    // console.log(name);
+    // console.log(Props.age);
     return(
         <div>
-            <div>Name: Faiz</div>
-            <div>Age: 23</div>
-            <div>Belt: Brown</div>
+            <div>Name: { name }</div>
+            <div>Age: { age }</div>
+            <div>Belt: { belt }</div>
         </div>
     );
 }
