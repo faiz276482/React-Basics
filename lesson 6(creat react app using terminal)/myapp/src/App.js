@@ -20,6 +20,14 @@ function App() {
     // console.log(ninjas);
   }
 
+  const deleteNinja =(id)=>{
+    console.log(id)
+    let ninjasNew=ninjas.filter(ninja=>{
+      return ninja.id!==id;
+    })
+    setNinjas(ninjasNew);
+  }
+
 
   return (
     <div className="App">
@@ -31,7 +39,7 @@ function App() {
         belt="Black"
       /> */}
 
-      <Ninjas ninjas={ninjas}/>
+      <Ninjas deleteNinja={deleteNinja} ninjas={ninjas}/>
       <AddNinja addNinja={addNinja}/>
     </div>
   );
