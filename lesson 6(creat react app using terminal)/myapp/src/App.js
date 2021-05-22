@@ -28,7 +28,6 @@ function App() {
     setNinjas(ninjasNew);
   }
 
-
   return (
     <div className="App">
       <h1>My first react app</h1>
