@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function Contact(props) {
     // console.log(props)
-    setTimeout(()=>{
-        props.history.push('/about')
-    },2000);
+    // setTimeout(()=>{
+    //     props.history.push('/about')
+    // },2000);
     
     return (
         <div className="conatiner">
